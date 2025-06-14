@@ -21,7 +21,7 @@ export default function Header({
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-brand-orange">BookOrigins</h1>
+            <h1 className="text-2xl font-bold brand-primary">BookOrigins</h1>
             <span className="ml-2 text-sm text-gray-400 hidden sm:inline">
               Where Stories Come to Life
             </span>
@@ -35,7 +35,7 @@ export default function Header({
                 placeholder="Search books, authors, genres..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
-                className="w-full bg-dark-bg border-dark-border rounded-lg pl-10 text-white placeholder-gray-400 focus:ring-2 focus:ring-brand-orange"
+                className="w-full bg-dark-bg border-dark-border rounded-lg pl-10 text-white placeholder-gray-400 focus:ring-2 focus:ring-purple-500"
               />
               <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
             </div>
@@ -48,7 +48,7 @@ export default function Header({
               className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                 isCreatorMode
                   ? "bg-gray-700 text-gray-300 hover:bg-gray-600"
-                  : "bg-brand-orange text-white hover:bg-orange-600"
+                  : "bg-brand-primary text-white hover:bg-purple-600"
               }`}
             >
               {isCreatorMode ? (

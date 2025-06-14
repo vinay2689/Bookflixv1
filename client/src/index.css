@@ -13,7 +13,7 @@
   --card-foreground: hsl(20, 14.3%, 4.1%);
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(16, 100%, 60%);
+  --primary: hsl(280, 100%, 65%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(60, 4.8%, 95.9%);
   --secondary-foreground: hsl(24, 9.8%, 10%);
@@ -21,36 +21,38 @@
   --accent-foreground: hsl(24, 9.8%, 10%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
-  --ring: hsl(20, 14.3%, 4.1%);
+  --ring: hsl(280, 100%, 65%);
   --radius: 0.5rem;
   
-  /* BookOrigins specific colors */
-  --brand-orange: hsl(16, 100%, 60%);
-  --dark-bg: hsl(0, 0%, 10.2%);
-  --dark-card: hsl(0, 0%, 17.6%);
-  --dark-border: hsl(0, 0%, 25.1%);
+  /* BookOrigins specific colors - Viki inspired */
+  --brand-primary: hsl(280, 100%, 65%);
+  --brand-secondary: hsl(320, 100%, 70%);
+  --brand-accent: hsl(260, 100%, 60%);
+  --dark-bg: hsl(240, 10%, 8%);
+  --dark-card: hsl(240, 8%, 12%);
+  --dark-border: hsl(240, 6%, 20%);
 }
 
 .dark {
-  --background: hsl(0, 0%, 10.2%);
+  --background: hsl(240, 10%, 8%);
   --foreground: hsl(0, 0%, 98%);
-  --muted: hsl(0, 0%, 15.9%);
+  --muted: hsl(240, 8%, 12%);
   --muted-foreground: hsl(240, 5%, 64.9%);
-  --popover: hsl(0, 0%, 17.6%);
+  --popover: hsl(240, 8%, 12%);
   --popover-foreground: hsl(0, 0%, 98%);
-  --card: hsl(0, 0%, 17.6%);
+  --card: hsl(240, 8%, 12%);
   --card-foreground: hsl(0, 0%, 98%);
-  --border: hsl(0, 0%, 25.1%);
-  --input: hsl(0, 0%, 15.9%);
-  --primary: hsl(16, 100%, 60%);
+  --border: hsl(240, 6%, 20%);
+  --input: hsl(240, 8%, 12%);
+  --primary: hsl(280, 100%, 65%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(0, 0%, 15.9%);
+  --secondary: hsl(240, 8%, 15%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(0, 0%, 15.9%);
+  --accent: hsl(240, 8%, 15%);
   --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(240, 4.9%, 83.9%);
+  --ring: hsl(280, 100%, 65%);
   --radius: 0.5rem;
 }
 
@@ -71,16 +73,24 @@
 }
 
 @layer utilities {
-  .brand-orange {
-    color: var(--brand-orange);
+  .brand-primary {
+    color: var(--brand-primary);
   }
   
-  .bg-brand-orange {
-    background-color: var(--brand-orange);
+  .bg-brand-primary {
+    background-color: var(--brand-primary);
   }
   
-  .border-brand-orange {
-    border-color: var(--brand-orange);
+  .border-brand-primary {
+    border-color: var(--brand-primary);
+  }
+  
+  .brand-secondary {
+    color: var(--brand-secondary);
+  }
+  
+  .bg-brand-secondary {
+    background-color: var(--brand-secondary);
   }
   
   .bg-dark-bg {

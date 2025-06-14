@@ -26,7 +26,7 @@ export default function CategoryTabs({ selectedGenre, onGenreChange }: CategoryT
               onClick={() => onGenreChange(genre.id)}
               className={`px-6 py-2 rounded-full font-medium transition-colors ${
                 selectedGenre === genre.id
-                  ? "bg-brand-orange text-white"
+                  ? "bg-brand-primary text-white"
                   : "bg-gray-700 text-gray-300 hover:bg-gray-600"
               }`}
             >

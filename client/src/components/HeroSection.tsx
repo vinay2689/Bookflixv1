@@ -9,14 +9,14 @@ export default function HeroSection() {
           <div>
             <h2 className="text-4xl lg:text-6xl font-bold mb-6">
               Discover Stories<br />
-              <span className="text-brand-orange">Through Film</span>
+              <span className="brand-primary">Through Film</span>
             </h2>
             <p className="text-xl text-gray-300 mb-8">
               Experience books like never before with movie-style trailers,
               comprehensive reviews, and direct access to both books and their adaptations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-brand-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+              <Button className="bg-brand-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
                 <Play className="mr-2 h-4 w-4" />
                 Watch Featured Trailer
               </Button>
