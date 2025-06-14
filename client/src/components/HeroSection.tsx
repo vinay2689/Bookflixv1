@@ -20,7 +20,7 @@ export default function HeroSection() {
                 <Play className="mr-2 h-4 w-4" />
                 Watch Featured Trailer
               </Button>
-              <Button variant="outline" className="border-gray-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+              <Button variant="outline" className="border-gray-600 text-[#2b3245] px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
                 Browse Library
               </Button>
             </div>
