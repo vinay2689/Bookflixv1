@@ -46,7 +46,7 @@ export default function CreatorMode() {
             onClick={() => setActiveTab(tab.id)}
             className={`px-6 py-3 font-medium border-b-2 rounded-none ${
               activeTab === tab.id
-                ? "border-brand-orange text-brand-orange"
+                ? "border-brand-primary brand-primary"
                 : "border-transparent text-gray-400 hover:text-white"
             }`}
           >
@@ -102,7 +102,7 @@ export default function CreatorMode() {
 
             <div className="mt-8">
               <h4 className="font-semibold mb-3 text-white">AI Assistant</h4>
-              <Button className="w-full bg-brand-orange text-white hover:bg-orange-600">
+              <Button className="w-full bg-brand-primary text-white hover:bg-purple-600">
                 <Bot className="mr-2 h-4 w-4" />
                 Get Writing Help
               </Button>

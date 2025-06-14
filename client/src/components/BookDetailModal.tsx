@@ -184,7 +184,7 @@ export default function BookDetailModal({ book, isOpen, onClose }: BookDetailMod
 
                   {/* Review Filters */}
                   <div className="flex gap-2 mb-4">
-                    <Button className="bg-brand-orange text-white text-sm">All Reviews</Button>
+                    <Button className="bg-brand-primary text-white text-sm">All Reviews</Button>
                     <Button variant="outline" className="bg-gray-700 text-gray-300 text-sm hover:bg-gray-600">
                       Goodreads
                     </Button>
@@ -223,7 +223,7 @@ export default function BookDetailModal({ book, isOpen, onClose }: BookDetailMod
                   {bookWithReviews.reviews.length > 0 && (
                     <Button
                       variant="ghost"
-                      className="w-full mt-4 text-brand-orange hover:text-orange-400"
+                      className="w-full mt-4 brand-primary hover:text-purple-400"
                     >
                       Load More Reviews
                     </Button>
