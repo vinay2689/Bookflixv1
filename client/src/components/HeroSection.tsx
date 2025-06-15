@@ -1,7 +1,23 @@
-import { Play } from "lucide-react";
+import { Play, Pause } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState, useRef } from "react";
+import heroVideoPath from "@assets/Video_Creation_Dark_Mode_Hero_1749952935587.mp4";
 
 export default function HeroSection() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const toggleVideo = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <section className="relative bg-gradient-to-r from-dark-bg via-dark-card to-dark-bg py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,14 +43,26 @@ export default function HeroSection() {
           </div>
           <div className="relative">
             <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=600"
-                alt="Featured book trailer thumbnail"
+              <video
+                ref={videoRef}
+                src={heroVideoPath}
                 className="w-full h-80 object-cover"
+                loop
+                muted={false}
+                playsInline
+                onPlay={() => setIsPlaying(true)}
+                onPause={() => setIsPlaying(false)}
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-                <Button className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-6 hover:bg-opacity-30 transition-all">
-                  <Play className="text-white h-6 w-6 ml-1" />
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition-all">
+                <Button 
+                  onClick={toggleVideo}
+                  className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-opacity-90 backdrop-blur-sm rounded-full p-6 hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-all transform hover:scale-110"
+                >
+                  {isPlaying ? (
+                    <Pause className="text-white h-6 w-6" fill="white" />
+                  ) : (
+                    <Play className="text-white h-6 w-6 ml-1" fill="white" />
+                  )}
                 </Button>
               </div>
             </div>
