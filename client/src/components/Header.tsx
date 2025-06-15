@@ -50,7 +50,7 @@ export default function Header({
               className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                 isCreatorMode
                   ? "bg-gray-700 text-gray-300 hover:bg-gray-600"
-                  : "bg-brand-primary text-white hover:bg-purple-600"
+                  : "bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 text-white hover:from-blue-500 hover:via-purple-600 hover:to-blue-700"
               }`}
             >
               {isCreatorMode ? (

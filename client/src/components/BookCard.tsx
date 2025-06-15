@@ -70,7 +70,7 @@ export default function BookCard({ book, onClick }: BookCardProps) {
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition-all">
                 <button
                   onClick={handleTrailerClick}
-                  className="bg-brand-primary bg-opacity-90 backdrop-blur-sm rounded-full p-4 hover:bg-opacity-100 transition-all transform hover:scale-110"
+                  className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-opacity-90 backdrop-blur-sm rounded-full p-4 hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-all transform hover:scale-110"
                 >
                   <Play className="text-white h-6 w-6 ml-1" fill="white" />
                 </button>

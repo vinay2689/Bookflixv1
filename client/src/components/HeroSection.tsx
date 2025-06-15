@@ -16,11 +16,11 @@ export default function HeroSection() {
               comprehensive reviews, and direct access to both books and their adaptations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-brand-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors">
+              <Button className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-colors">
                 <Play className="mr-2 h-4 w-4" />
                 Watch Featured Trailer
               </Button>
-              <Button variant="outline" className="border-gray-600 text-[#2b3245] px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+              <Button variant="outline" className="border-gradient bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-colors">
                 Browse Library
               </Button>
             </div>
