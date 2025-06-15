@@ -53,10 +53,14 @@ export default function HeroSection() {
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition-all">
+              <div className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
+                isPlaying ? 'bg-transparent opacity-0 hover:opacity-100' : 'bg-black bg-opacity-30 hover:bg-opacity-50'
+              }`}>
                 <Button 
                   onClick={toggleVideo}
-                  className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-opacity-90 backdrop-blur-sm rounded-full p-6 hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-all transform hover:scale-110"
+                  className={`bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-opacity-90 backdrop-blur-sm rounded-full p-6 hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-all transform hover:scale-110 ${
+                    isPlaying ? 'opacity-0 hover:opacity-100' : 'opacity-100'
+                  }`}
                 >
                   {isPlaying ? (
                     <Pause className="text-white h-6 w-6" fill="white" />
