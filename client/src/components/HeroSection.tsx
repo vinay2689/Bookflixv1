@@ -34,7 +34,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-colors">
                 <Play className="mr-2 h-4 w-4" />
-                Watch Featured Trailer
+                Featured Trailers
               </Button>
               <Button variant="outline" className="border-gradient bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-500 hover:via-purple-600 hover:to-blue-700 transition-colors">
                 Browse Library
