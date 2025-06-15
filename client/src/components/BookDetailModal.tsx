@@ -61,14 +61,6 @@ export default function BookDetailModal({ book, isOpen, onClose }: BookDetailMod
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-dark-card border-dark-border">
         <DialogHeader className="border-b border-dark-border pb-4">
           <DialogTitle className="text-2xl font-bold text-white">{book.title}</DialogTitle>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onClose}
-            className="absolute right-4 top-4 text-gray-400 hover:text-white"
-          >
-            <X className="h-5 w-5" />
-          </Button>
         </DialogHeader>
 
         {isLoading ? (

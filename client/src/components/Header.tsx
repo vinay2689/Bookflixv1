@@ -20,9 +20,11 @@ export default function Header({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="text-2xl font-bold brand-primary">BookOrigins</h1>
-            <span className="ml-2 text-sm text-gray-400 hidden sm:inline">
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 bg-clip-text text-transparent">
+              Bookflix
+            </h1>
+            <span className="text-xs text-gray-400 mt-1">
               Where Stories Come to Life
             </span>
           </div>
